@@ -1,0 +1,49 @@
+#ifndef  MEMEX_CPI
+#define MEMEX_CPI
+//===================================================================
+
+
+#include "..\MemUtils\memex.hpp"
+
+
+//===================================================================
+namespace cmk {
+	//===================================================================
+
+	using std::byte;
+
+	inline  const HANDLE        Memex::Process(void)  const { return m_process; }
+	inline  const std::string& Memex::String(void)  const { return m_string; }
+	inline  const byte* Memex::Pattern(void)  const { return m_pattern; }
+	inline  const byte* Memex::Mask(void)  const { return m_mask; }
+	inline        uint64_t      Memex::Length(void)  const { return m_length; }
+
+	//-------------------------------------------------------------------
+
+	inline
+		std::byte  Memex::hex_to_byte(char HEX)  const
+	{
+		if (HEX >= 'A' && HEX <= 'F') return (byte)(HEX - 'A' + 10);
+		if (HEX >= 'a' && HEX <= 'f') return (byte)(HEX - 'a' + 10);
+		if (HEX >= '0' && HEX <= '9') return (byte)(HEX - '0');
+		return (std::byte)0;
+	}
+
+	//-------------------------------------------------------------------
+
+	inline
+		bool  Memex::is_match(const byte* ADDR)  const
+	{
+		for (uint64_t i{ 0 }; i < m_length; ++i) {
+			auto  mask{ m_mask[i] };
+			//if( mask && m_pattern[i] != (mask & ADDR[i]) )  return false;
+			if ((bool)mask && m_pattern[i] != ADDR[i])  return false;
+		}
+		return true;
+	}
+
+	//===================================================================
+}
+//===================================================================
+
+#endif // ! MEMEX_CPI

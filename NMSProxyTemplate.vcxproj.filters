@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="NMSProxy">
+      <UniqueIdentifier>{cb02b3d9-c1e1-4c0b-9852-6e51159cf7e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\CasualLibrary">
+      <UniqueIdentifier>{1f43fef1-30a0-4935-ad46-248406b6a855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\libMBIN">
+      <UniqueIdentifier>{80ecf7de-da93-40f0-ad36-65af39379b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\Mem">
+      <UniqueIdentifier>{2514bf52-1676-432d-92fb-e8152d1ebf8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\Utils">
+      <UniqueIdentifier>{36234d65-01d8-4f7d-b0a2-59ae2c7689fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\CasualLibrary\Memory">
+      <UniqueIdentifier>{9ab2ac50-84ca-41b9-a170-6926bcde21e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\Mem\Mem Hack">
+      <UniqueIdentifier>{a28e4d74-2118-4a66-8e21-99613dad7a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NMSProxy\Mem\Mem Utils">
+      <UniqueIdentifier>{5ea0e6e4-3c58-471e-800b-b0d55cd0bea2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NMSProxy\Mem\MemHack\mainhack.hpp">
+      <Filter>NMSProxy\Mem\Mem Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\Mem\MemHack\globals.hpp">
+      <Filter>NMSProxy\Mem\Mem Hack</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\Mem\MemUtils\memop.hpp">
+      <Filter>NMSProxy\Mem\Mem Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\Mem\MemUtils\memex.hpp">
+      <Filter>NMSProxy\Mem\Mem Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\libMBIN\directories.hpp">
+      <Filter>NMSProxy\libMBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\libMBIN\mbin.hpp">
+      <Filter>NMSProxy\libMBIN</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\CasualLibrary.hpp">
+      <Filter>NMSProxy\CasualLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\External.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\Helper.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\Internal.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\Macros.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\Memory.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\CasualLibrary\Memory\Address.hpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.hpp" />
+    <ClInclude Include="NMSProxy\Mem\MemHack\initialize.hpp">
+      <Filter>NMSProxy\Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="NMSProxy\Mem\MemUtils\constants.hpp">
+      <Filter>NMSProxy\Mem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NMSProxy\Mem\MemHack\globals.cpp">
+      <Filter>NMSProxy\Mem\Mem Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\Mem\MemHack\mainhack.cpp">
+      <Filter>NMSProxy\Mem\Mem Hack</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\Mem\MemUtils\memex.cpp">
+      <Filter>NMSProxy\Mem\Mem Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\Mem\MemUtils\memop.cpp">
+      <Filter>NMSProxy\Mem\Mem Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\libMBIN\directories.cpp">
+      <Filter>NMSProxy\libMBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\libMBIN\mbin.cpp">
+      <Filter>NMSProxy\libMBIN</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\CasualLibrary\Memory\Address.cpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\CasualLibrary\Memory\External.cpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\CasualLibrary\Memory\Helper.cpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\CasualLibrary\Memory\Internal.cpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="NMSProxy\CasualLibrary\Memory\Memory.cpp">
+      <Filter>NMSProxy\CasualLibrary\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="NMSProxy\Mem\MemHack\initialize.cpp">
+      <Filter>NMSProxy\Mem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NMSProxy\Mem\MemUtils\memex.cpi">
+      <Filter>NMSProxy\Mem\Mem Utils</Filter>
+    </None>
+  </ItemGroup>
+</Project>
